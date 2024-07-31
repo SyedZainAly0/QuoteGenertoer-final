@@ -17,7 +17,7 @@ const LoginSignup = ({ onSignIn }) => {
         setEmail("");
         setPassword("");
     };
-
+    
     const handleLogin = () => {
         const user = JSON.parse(localStorage.getItem("user"));
         if (user && user.email === email && user.password === password) {
