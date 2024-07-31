@@ -17,7 +17,7 @@ const LoginSignup = ({ onSignIn }) => {
         setEmail("");
         setPassword("");
     };
-    
+
     const handleLogin = () => {
         const user = JSON.parse(localStorage.getItem("user"));
         if (user && user.email === email && user.password === password) {
@@ -50,7 +50,7 @@ const LoginSignup = ({ onSignIn }) => {
                     </div>
                 )}
                 <div className="input">
-                    <input type="email" placeholder='Email Id' value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input type="email"  placeholder='Email Id' value={email} onChange={(e) => setEmail(e.target.value)} required />
                 </div>
                 <div className="input">
                     <input type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
